@@ -5,6 +5,7 @@ sudo bash -c 'apt-get install docker.io -y  >/dev/null 2>&1 '
 sudo bash -c 'snap install kubectl --classic  >/dev/null 2>&1 '
 sudo bash -c 'curl -s https://fluxcd.io/install.sh | sudo bash >/dev/null 2>&1 '
 sudo bash -c 'curl -s https://raw.githubusercontent.com/rancher/k3d/main/install.sh | bash  >/dev/null 2>&1 '
+sudo bash -c 'curl https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3 | bash  >/dev/null 2>&1 '
 echo "Preparing Kubernetes Cluster ..."
 k3d cluster create gitopskubernetes --servers 3
 kubectl get nodes
